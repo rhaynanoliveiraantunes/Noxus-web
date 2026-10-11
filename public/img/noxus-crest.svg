@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 140" width="120" height="140" fill="none" class="noxus-crest-svg">
+  <!-- ========================================================================== -->
+  <!-- ARTE PROVISÓRIA / PLACEHOLDER:                                            -->
+  <!-- Substitua este arquivo SVG ou seu conteúdo pela arte vetorial definitiva! -->
+  <!-- Dimensões recomendadas: viewBox="0 0 120 140"                             -->
+  <!-- ========================================================================== -->
+
+  <defs>
+    <!-- Gradiente Carmesim -->
+    <linearGradient id="crestCrimson" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c4202e"/>
+      <stop offset="50%" stop-color="#8b0f1a"/>
+      <stop offset="100%" stop-color="#4d050c"/>
+    </linearGradient>
+
+    <!-- Gradiente Bronze Bélico -->
+    <linearGradient id="crestBronze" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d9b679"/>
+      <stop offset="60%" stop-color="#b08d57"/>
+      <stop offset="100%" stop-color="#73572f"/>
+    </linearGradient>
+
+    <!-- Gradiente Ferro Forjado -->
+    <linearGradient id="crestIron" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2a2426"/>
+      <stop offset="100%" stop-color="#140f11"/>
+    </linearGradient>
+
+    <!-- Filtro de Brilho Carmesim -->
+    <filter id="crimsonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Estandarte / Base Geométrica Traseira -->
+  <polygon points="60,6 106,24 96,104 60,134 24,104 14,24" fill="url(#crestIron)" stroke="url(#crestBronze)" stroke-width="2" stroke-linejoin="miter"/>
+
+  <!-- Moldura Interna em Carmesim -->
+  <polygon points="60,14 98,30 90,98 60,124 30,98 22,30" fill="#0b0809" stroke="url(#crestCrimson)" stroke-width="2.5" stroke-linejoin="miter"/>
+
+  <!-- Lâminas / Espigões Superiores Angulares -->
+  <polygon points="60,18 72,48 60,42 48,48" fill="url(#crestBronze)"/>
+  <polygon points="18,22 36,44 26,48 12,28" fill="url(#crestCrimson)"/>
+  <polygon points="102,22 84,44 94,48 108,28" fill="url(#crestCrimson)"/>
+
+  <!-- Lâminas Angulares Centrais (Asas de Guerra) -->
+  <polygon points="60,40 88,68 76,74 60,54 44,74 32,68" fill="url(#crestCrimson)" filter="url(#crimsonGlow)"/>
+
+  <!-- Placas de Armadura Chanfradas -->
+  <polygon points="60,56 80,78 74,96 60,86 46,96 40,78" fill="url(#crestIron)" stroke="url(#crestBronze)" stroke-width="1.5"/>
+
+  <!-- Diamante Central / Núcleo de Poder Carmesim -->
+  <polygon points="60,62 72,74 60,86 48,74" fill="url(#crestCrimson)" stroke="url(#crestBronze)" stroke-width="1.5"/>
+  <polygon points="60,67 67,74 60,81 53,74" fill="#ffffff" opacity="0.3"/>
+
+  <!-- Espigão Inferior / Ponta da Lâmina -->
+  <polygon points="60,94 68,114 60,126 52,114" fill="url(#crestBronze)"/>
+</svg>

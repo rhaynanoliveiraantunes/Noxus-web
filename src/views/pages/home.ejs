@@ -3,24 +3,85 @@
 
 <section class="hero-section">
   <div class="container hero-container">
-    <div class="badge">⚔ Em Desenvolvimento</div>
-    <h1 class="hero-title">Bem-vindo a <span class="text-accent"><%= serverName %></span></h1>
-    <p class="hero-subtitle">
-      O portal definitivo para membros da nossa comunidade do Discord. Acompanhe anúncios, regras, eventos e integre-se com a guilda.
+    
+    <!-- Brasão e Estandarte de Noxus -->
+    <div class="hero-crest-wrapper reveal-on-scroll">
+      <img src="/img/noxus-crest.svg" alt="Brasão de <%= serverName %>" class="hero-crest-svg">
+    </div>
+
+    <div class="hero-tag reveal-on-scroll">
+      ⚔ Fortaleza Comunitária ⚔
+    </div>
+
+    <h1 class="hero-title reveal-on-scroll">
+      Bastião de <span class="text-accent"><%= serverName %></span>
+    </h1>
+
+    <p class="hero-motto reveal-on-scroll">
+      "Força acima de tudo. A glória pertence aos conquistadores."
     </p>
 
-    <div class="construction-card">
-      <div class="construction-icon">🚧</div>
-      <h2>Portal em Construção</h2>
-      <p>
-        Estamos forjando os alicerces da nossa fortaleza digital. Em breve você terá acesso ao painel de regras, listagem de staff, sistema de eventos e autenticação direta via Discord.
+    <p class="hero-description reveal-on-scroll">
+      O ponto de encontro dos guerreiros do nosso servidor de Discord. Forje sua aliança, acompanhe anúncios de guerra, dispute eventos e consulte os decretos que regem nossa comunidade.
+    </p>
+
+    <!-- Placa de Metal Principal: Status de Construção -->
+    <div class="card-plate hero-card reveal-on-scroll">
+      <div class="hero-card-header">
+        <span class="hero-card-icon">⚙</span>
+        <h2>Portal em Edificação</h2>
+      </div>
+      <p class="hero-card-text">
+        As muralhas digitais de <%= serverName %> estão sendo forjadas no fogo e no ferro. Em breve, novos distritos estarão acessíveis: o Códice de Regras, o Conselho de Oficiais (Staff), torneios comunitários e integração direta de contas via Discord.
       </p>
-      <div class="action-buttons">
-        <a href="https://discord.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-          Junte-se à Comunidade no Discord
+      
+      <div class="hero-actions">
+        <a href="https://discord.com" target="_blank" rel="noopener noreferrer" class="btn btn-noxus-primary">
+          Alistar-se no Discord
+        </a>
+        <a href="#pilares" class="btn btn-noxus-secondary">
+          Conhecer os Pilares
         </a>
       </div>
     </div>
+
+    <!-- Divisor Ornamental de Noxus -->
+    <div class="divider-noxus reveal-on-scroll" id="pilares">
+      <div class="divider-line"></div>
+      <div class="divider-emblem">NOXUS</div>
+      <div class="divider-line"></div>
+    </div>
+
+    <h2 class="section-title reveal-on-scroll">Os Pilares do Império</h2>
+    <p class="section-subtitle reveal-on-scroll">Conheça o que sustenta nossa comunidade e o que está por vir.</p>
+
+    <!-- Grid de Pilares / Teasers Modulares -->
+    <div class="pillars-grid">
+      <div class="card-plate pillar-card reveal-on-scroll">
+        <div class="pillar-icon">⚖</div>
+        <h3 class="pillar-title">Códice de Regras</h3>
+        <p class="pillar-desc">
+          Diretrizes claras de conduta e respeito mútuo. Quem desafia a ordem enfrenta o julgamento do conselho.
+        </p>
+      </div>
+
+      <div class="card-plate pillar-card reveal-on-scroll">
+        <div class="pillar-icon">🛡</div>
+        <h3 class="pillar-title">Conselho de Oficiais</h3>
+        <p class="pillar-desc">
+          Apresentação da liderança e moderadores responsáveis por manter a fortaleza organizada e ativa.
+        </p>
+      </div>
+
+      <div class="card-plate pillar-card reveal-on-scroll">
+        <div class="pillar-icon">🏆</div>
+        <h3 class="pillar-title">Torneios & Eventos</h3>
+        <p class="pillar-desc">
+          Disputas sazonais, rankings internos e noites de jogos com premiações para os mais bravos membros.
+        </p>
+      </div>
+    </div>
+
   </div>
 </section>
 

@@ -2,13 +2,17 @@
 <%- include('../partials/header') %>
 
 <section class="error-section">
-  <div class="container error-container">
-    <div class="error-code">404</div>
-    <h1 class="error-title">Território Não Encontrado</h1>
-    <p class="error-desc">
-      A página que você está tentando acessar não existe ou foi movida nas fronteiras de <%= serverName %>.
-    </p>
-    <a href="/" class="btn btn-primary">Voltar para o Início</a>
+  <div class="container">
+    <div class="card-plate error-card reveal-on-scroll">
+      <div class="error-code">404</div>
+      <h1 class="error-title">Território Não Mapeado</h1>
+      <p class="error-desc">
+        A rota que você tentou acessar não existe nas fronteiras de <%= serverName %>. Pode ter sido destruída em combate ou movida para outros domínios.
+      </p>
+      <a href="/" class="btn btn-noxus-primary">
+        Retornar ao Bastião
+      </a>
+    </div>
   </div>
 </section>
 

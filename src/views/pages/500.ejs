@@ -2,16 +2,20 @@
 <%- include('../partials/header') %>
 
 <section class="error-section">
-  <div class="container error-container">
-    <div class="error-code">500</div>
-    <h1 class="error-title">Instabilidade no Bastião</h1>
-    <p class="error-desc">
-      Ocorreu uma falha interna no servidor ao processar sua solicitação. Nossos engenheiros já foram notificados.
-    </p>
-    <% if (typeof error !== 'undefined' && error) { %>
-      <pre class="error-debug"><%= error %></pre>
-    <% } %>
-    <a href="/" class="btn btn-primary">Voltar para o Início</a>
+  <div class="container">
+    <div class="card-plate error-card reveal-on-scroll">
+      <div class="error-code">500</div>
+      <h1 class="error-title">Instabilidade no Bastião</h1>
+      <p class="error-desc">
+        Uma falha crítica ocorreu nos mecanismos internos do servidor. Os artífices de <%= serverName %> já foram convocados para restabelecer a ordem.
+      </p>
+      <% if (typeof error !== 'undefined' && error) { %>
+        <pre class="error-debug"><%= error %></pre>
+      <% } %>
+      <a href="/" class="btn btn-noxus-primary">
+        Retornar ao Bastião
+      </a>
+    </div>
   </div>
 </section>
 
